@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShapesD.Shapes
 {
-    internal class Circle
+    internal class Circle : Shape
     {
         public const int NUMBER_OF_EDGES = 1;
 

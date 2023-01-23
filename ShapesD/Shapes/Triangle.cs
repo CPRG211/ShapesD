@@ -11,7 +11,7 @@ namespace ShapesD.Shapes
     /// </summary>
     /// <remarks>Author: Joe Blow</remarks>
     /// <remarks>Date: Jan 20, 2023</remarks>
-    internal class Triangle
+    internal class Triangle : Shape
     {
         public const int NUMBER_OF_EDGES = 3;
 
@@ -131,9 +131,8 @@ namespace ShapesD.Shapes
             }
         }
 
-        public Triangle()
+        public Triangle() : this(90, 45, 45, 1, 1, "blue")
         {
-
         }
 
         public Triangle(double angle1, double angle2, double angle3, double baseLength, double height, string color)

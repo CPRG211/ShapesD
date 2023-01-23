@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShapesD.Shapes
 {
-    internal class Square
+    internal class Square : Rectangle
     {
         public const int NUMBER_OF_EDGES = 4;
         private double sideLength;
@@ -27,11 +27,11 @@ namespace ShapesD.Shapes
             get { return Math.Sqrt(this.SideLength); }
         }
 
-        public Square(double sideLength, string color)
+        public Square(double sideLength, string color) : base(sideLength, sideLength, color)
         {
             //this.edges = 4;
             this.sideLength = sideLength;
-            this.color = color;
+            //this.color = color;
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShapesD.Shapes
 {
-    internal class Rectangle
+    internal class Rectangle : Shape
     {
         public const int NUMBER_OF_EDGES = 4;
 
@@ -14,6 +14,11 @@ namespace ShapesD.Shapes
         private double height;
 
         private string color;
+
+        public string Color
+        {
+            get { return color; }
+        }
 
         public double Width
         {
